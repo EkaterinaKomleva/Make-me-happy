@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h4>{{name}}</h4>
+      <p>{{text}}</p>
+      <a
+        class="btn btn-primary"
+        [routerLink]="'/' + typeOfCards">Назад
+      </a>
+    </div>
+    <div class="col-md-8">
+      <img class="card-img-top" src="{{imageUrl}}" alt="Card image cap">
+    </div>
+  </div>
+</div>

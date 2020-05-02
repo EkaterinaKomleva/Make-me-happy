@@ -1,0 +1,12 @@
+<div class="card ml-5 mt-2 size">
+  <img class="card-img-top" src="{{cardItem.imageUrl}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{cardItem.name}}</h5>
+    <p class="card-text">{{cardItem.text}}</p>
+    <a
+      [routerLink]="['/' + typeOfCards, cardItem.id, cardItem.name]"
+      [queryParams]="{typeOfCards: typeOfCards, imageUrl: cardItem.imageUrl, text: cardItem.text}"
+      class="btn btn-primary">Заглянуть
+    </a>
+  </div>
+</div>
